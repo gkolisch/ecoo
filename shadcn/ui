@@ -1,0 +1,21 @@
+// app/(authenticated)/communities/new/page.tsx
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { CreateCommunityForm } from './create-community-form'
+
+export default function NewCommunityPage() {
+  return (
+    <div className="container mx-auto py-10 max-w-2xl">
+      <Card>
+        <CardHeader>
+          <CardTitle>Criar Nova Comunidade</CardTitle>
+          <CardDescription>
+            Preencha os dados abaixo para criar sua comunidade. Você será o administrador principal.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <CreateCommunityForm />
+        </CardContent>
+      </Card>
+    </div>
+  )
+}
